@@ -3,4 +3,5 @@ sed -i -e "s/%nimbus%/$NIMBUS_PORT_6627_TCP_ADDR/g" $STORM_HOME/conf/storm.yaml
 
 echo "storm.local.hostname: `hostname -i`" >> $STORM_HOME/conf/storm.yaml
 
-/usr/sbin/sshd && supervisord
+/usr/bin/ssh-keygen -A
+/usr/sbin/sshd && supervisord -c /etc/supervisor/supervisord.conf
