@@ -24,4 +24,6 @@ drpc.servers:
     - "%nimbus%"
 drpc.port: 3772
 drpc.invocations.port: 3773
-storm.log.dir: "/var/log/storm/"
+
+storm.local.dir: "/var/storm/storm-local/"
+storm.log.dir: "/var/storm/logs/"

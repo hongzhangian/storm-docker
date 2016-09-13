@@ -4,5 +4,4 @@ sed -i -e "s/%nimbus%/$IP/g" $STORM_HOME/conf/storm.yaml
 
 echo "storm.local.hostname: `hostname -i`" >> $STORM_HOME/conf/storm.yaml
 
-/usr/bin/ssh-keygen -A
-/usr/sbin/sshd && supervisord -c /etc/supervisor/supervisord.conf
+supervisord -c /etc/supervisor/supervisord.conf
