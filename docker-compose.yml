@@ -14,6 +14,10 @@ supervisor:
   image: hongzhangian/storm-supervisor
   ports:
     - "8000"
+    - "56700"
+    - "56701"
+    - "56702"
+    - "56703"
   links: 
     - nimbus:nimbus
     - zookeeper:zk
